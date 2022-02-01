@@ -4,6 +4,7 @@
   "description": "Test project",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
     "build": "npx tailwindcss -i ./public/stylesheets/tailwind.css -o ./public/stylesheets/app.css --watch"
