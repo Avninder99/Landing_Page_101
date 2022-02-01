@@ -27,9 +27,9 @@
 
         <title>Apple Watch Page</title>
     </head>
-    <body class="flex flex-col md:flex-row m-0 p-0 z-0">
+    <body class="flex flex-col md:flex-row m-0 p-0 z-0 h-max w-screen flex-wrap">
         
-        <div class="rounded-3xl main_div w-full h-h-90 md:h-screen md:pb-10 md:ml-28 overflow-hidden">
+        <div class="rounded-3xl main_div w-full h-h-90 md:h-screen md:pb-10 md:ml-28 overflow-x-hidden md:overflow-y-hidden lg:overflow-y-visible">
             <nav class="z-10 md:py-9">
                 <div class="max-w-7xl mx-auto px-9 pt-7 md:pt-1">
                     <div class="relative flex items-center justify-between h-16">
@@ -89,7 +89,7 @@
                         <div
                             class="absolute inset-y-0 right-0 flex items-center md:static md:inset-auto md:ml-6 md:pr-0 "
                         >
-                            <div id="search-bar" class="hidden text-left pl-5 pt-2 w-full md:w-64 xl:w-72 h-10 bg-white/30 rounded-tl-full rounded-bl-full text-white font-poppins font-normal">
+                            <div id="search-bar" class="hidden text-left pl-5 pt-2 pr-7 sm:pr-10 md:pr-0 md:w-64 xl:w-72 h-10 bg-white/30 rounded-tl-full rounded-bl-full text-white font-poppins font-normal">
                                 Search here
                             </div>
                             <button
@@ -158,32 +158,32 @@
             </nav>
 
 
-            <div class="flex flex-col md:flex-row md:pr-11 text-white md:h-full" >
+            <div class="flex flex-col md:flex-row md:pr-11 text-white md:h-max" >
 
                 <div class="w-full md:w-3/5 p-8 md:p-11 pt-16 md:pt-18 lg:pt-20 font-poppins relative md:h-full">
                     <h1 class="font-poppins text-mini leading-mini lg:text-big lg:leading-big xl:text-huge xl:leading-huge font-semibold">The Perfect Moment</h1>
                     <h2 class="font-poppins text-mini leading-mini lg:text-big lg:leading-big xl:text-huge xl:leading-huge font-normal mb-12">Between Past And Future.</h2>
-                    <button class="font-poppins border-solid border-white rounded-full border-3 py-3.5 px-10 md:px-12 lg:px-14 font-medium text-2xl">
+                    <button class="font-poppins border-solid border-white rounded-full border-3 py-3.5 px-10 md:px-10 lg:px-14 font-medium text-2xl md:text-xl lg:text-2xl">
                         Buy Now
                     </button>
-                    <img class="hidden md:block absolute bottom-36" src="../public/images/page_indicator.svg" alt="Page Indicator">
+                    <img class="hidden md:block absolute -bottom-40" src="../public/images/page_indicator.svg" alt="Page Indicator">
                 </div>
     
                 <div class="w-full md:w-2/5 flex justify-center md:block">
-                    <div class="relative flex flex-row mb-10 pl-0 md:px-0">
+                    <div class="relative flex flex-row mb-18 md:mb-6 pl-0 md:px-0">
                         <img class="max-w-md w-5/6 md:pt-6" src="../public/images/main_watch.svg" alt="Apple Watch">
-                        <img class="self-center mb-20 md:mb-0 h-36 lg:h-auto" src="../public/images/color_indicator.svg" alt="Indicator">
+                        <img class="self-center mb-20 md:mb-0 md:h-32 lg:h-auto" src="../public/images/color_indicator.svg" alt="Indicator">
                     </div>
     
-                    <div class="hidden md:flex flex-row w-auto justify-between xl:px-8">
-                        <img class="md:mr-2 lg:mr-4" src="../public/images/b_watch_2.svg" alt="Black Varient">
-                        <img class="md:mx-2 lg:mx-4" src="../public/images/g_watch_2.svg" alt="Green Varient">
-                        <img class="md:ml-2 lg:ml-4" src="../public/images/r_watch_2.svg" alt="Rose Gold Varient">
-                    </div>
                 </div>
-
+                
             </div>
             
+            <div class="hidden md:flex flex-row w-full justify-end md:px-6 lg:px-8 xl:px-16">
+                <img class="md:mr-2 lg:mr-4 md:w-28 lg:w-auto" src="../public/images/b_watch_2.svg" alt="Black Varient">
+                <img class="md:mx-2 lg:mx-4 md:w-28 lg:w-auto" src="../public/images/g_watch_2.svg" alt="Green Varient">
+                <img class="md:ml-2 lg:ml-4 md:w-28 lg:w-auto" src="../public/images/r_watch_2.svg" alt="Rose Gold Varient">
+            </div>
         </div>
         
         <div class="px-6 md:px-0 main_div_2 w-full md:w-28 h-5.5 md:h-full bg-white flex flex-row md:flex-col justify-between items-center fixed bottom-0 z-20">

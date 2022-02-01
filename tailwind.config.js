@@ -11,6 +11,9 @@ module.exports = {
             height: {
                 "h-90": "900px"
             },
+            // width: {
+            //     ''
+            // },
             fontFamily: {
                 'poppins': ['Poppins', 'sans-serif']
             },
