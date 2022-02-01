@@ -1,0 +1,33 @@
+{
+  "name": "landing_page_101",
+  "version": "1.0.0",
+  "description": "Test project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "build": "npx tailwindcss -i ./public/stylesheets/tailwind.css -o ./public/stylesheets/app.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Avninder99/Landing_Page_101.git"
+  },
+  "author": "Avninder Preet Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Avninder99/Landing_Page_101/issues"
+  },
+  "homepage": "https://github.com/Avninder99/Landing_Page_101#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "nodemon": "^2.0.15",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.18"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.2",
+    "path": "^0.12.7"
+  }
+}
