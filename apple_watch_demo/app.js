@@ -12,6 +12,6 @@ app.get("*", (req, res) => {
     return res.render("landing");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log("Server has started");
 });
